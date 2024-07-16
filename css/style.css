@@ -4,34 +4,47 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .hero{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(217deg, #5c106e, #395273 70.71%), linear-gradient(127deg, #222f40, #96b9d9 70.71%), linear-gradient(336deg, #96b9d9, #395273 70.71%);
+    background: #281549;
     background-size: cover;
     background-position: center;
 }
 nav{
     display: flex;
+    background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(40,21,73,0.4) 100%, rgba(40,21,73,0) 100%);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient();
     padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 5px;
+    padding-right: 5%;
+    padding-bottom: 15px;
 }
 .logo{
     color: #03000d;
-    font-size: 35px;
+    font-size: 45px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 .logo span{
+    font-size: 25px;
     color: #d9bca3;
 }
 nav ul {
     list-style-type: none;
 }
 nav ul li {
+    background: linear-gradient(to bottom, #3f5efb, rgba(40,21,73,1));
+    border-radius: 25px;
     display: inline-block;
     position: relative;
     padding: 10px 25px;
@@ -103,4 +116,30 @@ nav ul li:hover .dropdown-content {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+.content-intro{
+    position: absolute;
+    width: 90%;
+    top: 20%;
+    left: 5%;
+}
+.content-intro h1{
+    color: white;
+    font-family: "Bebas Neue";
+    text-shadow: 0px 0px 10px white;
+    letter-spacing: 8px;
+    font-size: 100px;
+    padding: 0 20px 0 0;
+    height: 90px;
+}
+.content-intro .container-intro{
+    display: flex;
+    align-items: baseline;
+    height: 90px;
+
+}
+.content-intro h4{
+    color: #fc46f3;
+    font-size: 45px;
+    text-shadow: 0px 0px 10px #fc46f3;
 }

@@ -1,145 +1,49 @@
-*{
-    padding: 0;
+body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #001f3f, #ffffff);
 }
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.hero{
-    height: 100vh;
-    width: 100%;
-    background: #281549;
-    background-size: cover;
-    background-position: center;
-}
-nav{
-    display: flex;
-    background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(40,21,73,0.4) 100%, rgba(40,21,73,0) 100%);
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); 
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient();
-    padding-top: 45px;
-    padding-left: 5px;
-    padding-right: 5%;
-    padding-bottom: 15px;
-}
-.logo{
-    color: #03000d;
-    font-size: 45px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-.logo span{
-    font-size: 25px;
-    color: #d9bca3;
-}
-nav ul {
-    list-style-type: none;
-}
-nav ul li {
-    background: linear-gradient(to bottom, #3f5efb, rgba(40,21,73,1));
-    border-radius: 25px;
-    display: inline-block;
-    position: relative;
-    padding: 10px 25px;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-nav ul li a:hover{
-    color: #d9bca3;
-    transition: 400ms;
-}
-nav ul li .dropdown-content {
-    overflow: hidden;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-    transform: translateY(30%);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-nav ul li .dropdown-content li {
-    padding: 12px 10px 4px;
-}
-nav ul li .dropdown-content li a {
-    color: white;
-    text-decoration: none;
-}
-nav ul li .dropdown-content li a::after {
-    content: "";
-    position: absolute;
-    width: 90%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #d9bca3;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-nav ul li .dropdown-content li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-nav ul li .dropdown-content li a:hover {
-    color: #d9bca3;
-    transition: 400ms;
-}
-nav ul li:hover .dropdown-content {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-.container-overall{
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.container-overall .ranking-list{
-    width: 60%;
-}
-.container-overall .ranking-list li{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-.content-intro{
-    position: absolute;
-    width: 90%;
-    top: 20%;
-    left: 5%;
-}
-.content-intro h1{
-    color: white;
-    font-family: "Bebas Neue";
-    text-shadow: 0px 0px 10px white;
-    letter-spacing: 8px;
-    font-size: 100px;
-    padding: 0 20px 0 0;
-    height: 90px;
-}
-.content-intro .container-intro{
-    display: flex;
-    align-items: baseline;
-    height: 90px;
 
+/* Navigation Menu */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001f3f;
+    padding: 20px;
+    color: white;
 }
-.content-intro h4{
-    color: #fc46f3;
-    font-size: 45px;
-    text-shadow: 0px 0px 10px #fc46f3;
+.nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+.nav ul li {
+    margin-left: 20px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav ul li a:hover {
+    color: #ff85b7;
+}
+
+/* Hero Section */
+.hero-banner {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #001f3f, #6a0dad);
+    color: white;
+    text-align: center;
+}
+.hero-banner h1 {
+    font-size: 3em;
 }

@@ -57,3 +57,52 @@ body {
 .hero-banner h1 {
     font-size: 3em;
 }
+
+/* News Section */
+.news-section {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.news-content {
+    display: flex;
+    width: 80%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.news-text {
+    flex: 1;
+    padding-right: 20px;
+}
+.news-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.news-text p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.learn-more {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+.learn-more:hover {
+    background-color: #ff85b7;
+}
+.news-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
